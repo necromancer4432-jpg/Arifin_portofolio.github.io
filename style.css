@@ -1,0 +1,267 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0B1221;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* --- Background Pattern --- */
+.pattern-bg {
+    background-color: #0B1221;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e293b' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* --- Fade In Animations --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* --- Scale In Animation --- */
+.scale-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* --- Skill Bar Fill --- */
+.skill-bar-fill {
+    width: 0%;
+    transition: width 1.5s ease-out;
+}
+
+/* --- Timeline Line --- */
+.timeline-line {
+    background: linear-gradient(to bottom, #2563eb, #3b82f6, #60a5fa, transparent);
+}
+
+/* --- Glow Effect --- */
+.glow-blue {
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.15), 0 0 60px rgba(37, 99, 235, 0.05);
+}
+
+/* --- Card Hover --- */
+.card-hover {
+    transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+/* --- Nav Link Underline --- */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* --- Typing Cursor --- */
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: #2563eb;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* --- Float Animation --- */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.float-animation {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* --- Pulse Glow --- */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(37, 99, 235, 0.4);
+    }
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* --- Project Image Zoom --- */
+.project-img {
+    transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.08);
+}
+
+/* --- Social Icon Card Hover --- */
+.social-icon-card {
+    transition: all 0.4s ease;
+}
+
+.social-icon-card:hover {
+    transform: translateY(-6px);
+}
+
+.social-icon-card.facebook:hover {
+    border-color: #1877F2;
+    box-shadow: 0 12px 30px -8px rgba(24, 119, 242, 0.3);
+}
+.social-icon-card.facebook:hover .s-icon-bg {
+    background: rgba(24, 119, 242, 0.15);
+}
+.social-icon-card.facebook:hover .s-icon {
+    color: #1877F2;
+}
+
+.social-icon-card.github:hover {
+    border-color: #e6edf3;
+    box-shadow: 0 12px 30px -8px rgba(230, 237, 243, 0.15);
+}
+.social-icon-card.github:hover .s-icon-bg {
+    background: rgba(230, 237, 243, 0.1);
+}
+.social-icon-card.github:hover .s-icon {
+    color: #e6edf3;
+}
+
+.social-icon-card.spotify:hover {
+    border-color: #1DB954;
+    box-shadow: 0 12px 30px -8px rgba(29, 185, 84, 0.3);
+}
+.social-icon-card.spotify:hover .s-icon-bg {
+    background: rgba(29, 185, 84, 0.15);
+}
+.social-icon-card.spotify:hover .s-icon {
+    color: #1DB954;
+}
+
+.social-icon-card.linkedin:hover {
+    border-color: #0A66C2;
+    box-shadow: 0 12px 30px -8px rgba(10, 102, 194, 0.3);
+}
+.social-icon-card.linkedin:hover .s-icon-bg {
+    background: rgba(10, 102, 194, 0.15);
+}
+.social-icon-card.linkedin:hover .s-icon {
+    color: #0A66C2;
+}
+
+.social-icon-card.instagram:hover {
+    border-color: #E4405F;
+    box-shadow: 0 12px 30px -8px rgba(228, 64, 95, 0.3);
+}
+.social-icon-card.instagram:hover .s-icon-bg {
+    background: rgba(228, 64, 95, 0.15);
+}
+.social-icon-card.instagram:hover .s-icon {
+    color: #E4405F;
+}
+
+.social-icon-card.email:hover {
+    border-color: #3B82F6;
+    box-shadow: 0 12px 30px -8px rgba(59, 130, 246, 0.25);
+}
+.social-icon-card.email:hover .s-icon-bg {
+    background: rgba(59, 130, 246, 0.15);
+}
+.social-icon-card.email:hover .s-icon {
+    color: #3B82F6;
+}
+
+.s-icon {
+    transition: color 0.3s ease;
+}
+
+.s-icon-bg {
+    transition: background 0.3s ease;
+}
+
+/* --- Language Badge Hover --- */
+.lang-badge {
+    transition: all 0.3s ease;
+}
+
+.lang-badge:hover {
+    transform: translateY(-2px);
+}
+
+/* --- Selection Color --- */
+::selection {
+    background-color: rgba(37, 99, 235, 0.4);
+    color: #ffffff;
+}
