@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Arifin — Personal Branding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pattern-bg text-white font-sans antialiased">
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-2 group">
+                <div
+                    class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg group-hover:bg-blue-500 transition-colors">
+                    A</div>
+                <span class="text-white font-semibold text-lg hidden sm:block">Muhammad<span
+                        class="text-blue-400">Arifin</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="nav-link text-sm text-slate-300 hover:text-white transition-colors">Tentang</a>
+                <a href="#education"
+                    class="nav-link text-sm text-slate-300 hover:text-white transition-colors">Pendidikan</a>
+                <a href="#projects"
+                    class="nav-link text-sm text-slate-300 hover:text-white transition-colors">Proyek</a>
+                <a href="#skills"
+                    class="nav-link text-sm text-slate-300 hover:text-white transition-colors">Keahlian</a>
+                <a href="#social"
+                    class="bg-blue-600 text-white py-2 px-5 text-sm font-medium rounded hover:bg-blue-500 transition-colors">Media
+                    Sosial</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-slate-900/95 backdrop-blur-md border-t border-slate-800">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="#about" class="mobile-link text-slate-300 hover:text-white py-2 transition-colors">Tentang</a>
+                <a href="#education"
+                    class="mobile-link text-slate-300 hover:text-white py-2 transition-colors">Pendidikan</a>
+                <a href="#projects"
+                    class="mobile-link text-slate-300 hover:text-white py-2 transition-colors">Proyek</a>
+                <a href="#skills"
+                    class="mobile-link text-slate-300 hover:text-white py-2 transition-colors">Keahlian</a>
+                <a href="#social"
+                    class="bg-blue-600 text-white py-3 px-5 text-sm font-medium rounded text-center hover:bg-blue-500 transition-colors">Media
+                    Sosial</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute top-20 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-10 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 left-1/4 w-2 h-2 bg-blue-400 rounded-full float-animation"></div>
+        <div class="absolute top-1/4 right-1/3 w-1.5 h-1.5 bg-blue-300 rounded-full float-animation"
+            style="animation-delay:1s;"></div>
+        <div class="absolute bottom-1/3 right-1/4 w-2.5 h-2.5 bg-blue-500 rounded-full float-animation"
+            style="animation-delay:0.5s;"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div class="fade-in mb-6">
+                <span
+                    class="inline-block px-4 py-1.5 bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-300 text-xs font-bold uppercase tracking-widest">Selamat
+                    Datang di Portofolio Saya</span>
+            </div>
+            <h1 class="fade-in font-serif text-4xl sm:text-5xl md:text-7xl font-normal tracking-tight leading-tight mb-6"
+                style="transition-delay:0.15s;">Halo, Saya<br><span class="text-blue-400">Muhammad Arifin</span></h1>
+            <p id="typing-text"
+                class="fade-in text-slate-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-4 leading-relaxed typing-cursor"
+                style="transition-delay:0.3s;"></p>
+            <p class="fade-in text-slate-500 text-sm max-w-xl mx-auto mb-10" style="transition-delay:0.4s;">Mahasiswa
+                Teknik Informatika yang bersemangat dalam membangun solusi digital berdampak.</p>
+            <div class="fade-in flex flex-col sm:flex-row items-center justify-center gap-4"
+                style="transition-delay:0.5s;">
+                <a href="#projects"
+                    class="bg-blue-600 text-white py-3 px-8 text-sm font-medium rounded hover:bg-blue-500 transition-all pulse-glow flex items-center gap-2">
+                    <i data-lucide="folder-open" class="w-4 h-4"></i> Lihat Proyek Saya
+                </a>
+                <a href="#social"
+                    class="bg-slate-800 text-slate-300 py-3 px-8 text-sm font-medium rounded hover:bg-slate-700 border border-slate-700 transition-all flex items-center gap-2">
+                    <i data-lucide="share-2" class="w-4 h-4"></i> Temukan Saya Online
+                </a>
+            </div>
+            <div class="fade-in flex items-center justify-center gap-4 mt-12" style="transition-delay:0.65s;">
+                <a href="https://www.facebook.com/share/1BNceYfQeA/" target="_blank" rel="noopener noreferrer"
+                    class="w-11 h-11 bg-slate-800/60 border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-[#1877F2] hover:border-[#1877F2]/50 hover:bg-[#1877F2]/10 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/necromancer4432-jpg" target="_blank" rel="noopener noreferrer"
+                    class="w-11 h-11 bg-slate-800/60 border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:border-white/30 hover:bg-white/10 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a>
+                <a href="https://open.spotify.com/user/312pysbw5awmz4vfr4ep35dmdaiq?si=floIDG04Qt6-0Emn54qikw" target="_blank" rel="noopener noreferrer"
+                    class="w-11 h-11 bg-slate-800/60 border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-[#1DB954] hover:border-[#1DB954]/50 hover:bg-[#1DB954]/10 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                    class="w-11 h-11 bg-slate-800/60 border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-[#0A66C2] hover:border-[#0A66C2]/50 hover:bg-[#0A66C2]/10 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                    class="w-11 h-11 bg-slate-800/60 border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-[#E4405F] hover:border-[#E4405F]/50 hover:bg-[#E4405F]/10 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 fade-in" style="transition-delay:0.8s;">
+            <a href="#about" class="flex flex-col items-center gap-2 text-slate-500 hover:text-blue-400 transition-colors">
+                <span class="text-xs uppercase tracking-widest">Scroll</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 animate-bounce"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="relative py-24 overflow-hidden">
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-left relative">
+                    <div class="relative">
+                        <img src="https://i1-c.pinimg.com/736x/e1/ed/22/e1ed229ae6bc09c02bea0f85bce461b4.jpg"
+                            alt="Muhammad Arifin"
+                            class="rounded-2xl w-full max-w-md mx-auto object-cover aspect-[4/5] border border-slate-700/50">
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-blue-600/30 rounded-2xl -z-10"></div>
+                        <div class="absolute -top-4 -left-4 w-24 h-24 border-2 border-blue-500/20 rounded-2xl -z-10"></div>
+                    </div>
+                </div>
+                <div class="fade-in-right">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4 block">Tentang Saya</span>
+                    <h2 class="font-serif text-3xl md:text-4xl tracking-tight mb-6">Mahasiswa <span class="text-blue-400 italic">Informatika</span> yang Berfokus pada Web Development</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Saya Muhammad Arifin, mahasiswa semester 2
+                        Program Studi Teknik Rekayasa Perangkat Lunak di Politeknik Negeri Batam. Saya memiliki
+                        ketertarikan yang besar dalam dunia pengembangan web, khususnya pada bagian backend dan frontend.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">Saya percaya bahwa teknologi memiliki
+                        kekuatan untuk mengubah kehidupan, dan saya ingin menjadi bagian dari perubahan tersebut melalui
+                        solusi-solusi digital yang inovatif dan berdampak positif.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="user" class="w-4 h-4 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500">Nama Lengkap</div>
+                                <div class="text-sm text-white font-medium">Muhammad Arifin</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500">Alamat</div>
+                                <div class="text-sm text-white font-medium">Batam, Indonesia</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500">Email</div>
+                                <div class="text-sm text-white font-medium">necromancer4432@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500">Status</div>
+                                <div class="text-sm text-white font-medium">Mahasiswa Semester 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://github.com/necromancer4432-jpg" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 bg-slate-800 text-slate-300 py-2.5 px-5 text-sm rounded border border-slate-700 hover:border-slate-600 hover:text-white transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg> GitHub
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 bg-blue-600/10 text-blue-400 py-2.5 px-5 text-sm rounded border border-blue-600/30 hover:bg-blue-600/20 hover:text-blue-300 transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section id="education" class="relative py-24 bg-slate-900/50">
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4 block">Riwayat Pendidikan</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-tight">Perjalanan <span class="text-blue-400 italic">Pendidikan</span> Saya</h2>
+            </div>
+            <div class="relative">
+                <div class="absolute left-6 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 timeline-line"></div>
+
+                <!-- Timeline Item 1 -->
+                <div class="relative flex flex-col md:flex-row items-start mb-12 fade-in-left">
+                    <div class="md:w-1/2 md:pr-12 md:text-right pl-16 md:pl-0">
+                        <div class="bg-slate-800/50 backdrop-blur border border-slate-700/50 rounded-xl p-6 card-hover">
+                            <span class="inline-block px-3 py-1 bg-blue-600/20 text-blue-300 text-xs font-bold rounded-full mb-3">2025 — Sekarang</span>
+                            <h3 class="text-lg font-semibold text-white mb-1">Politeknik Negeri Batam</h3>
+                            <p class="text-blue-400 text-sm font-medium mb-3">D IV — Teknik Informatika</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Memulai perjalanan di jenjang perguruan tinggi dengan fokus pada pengembangan perangkat lunak, algoritma, dan pemrograman web.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-8 w-5 h-5 bg-blue-600 rounded-full border-4 border-slate-900 z-10 pulse-glow"></div>
+                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative flex flex-col md:flex-row items-start mb-12 fade-in-right">
+                    <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                    <div class="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-8 w-5 h-5 bg-blue-500 rounded-full border-4 border-slate-900 z-10"></div>
+                    <div class="md:w-1/2 md:pl-12 pl-16">
+                        <div class="bg-slate-800/50 backdrop-blur border border-slate-700/50 rounded-xl p-6 card-hover">
+                            <span class="inline-block px-3 py-1 bg-slate-700/50 text-slate-300 text-xs font-bold rounded-full mb-3">2022 — 2025</span>
+                            <h3 class="text-lg font-semibold text-white mb-1">Madrasah Aliyah Batamiyah</h3>
+                            <p class="text-blue-400 text-sm font-medium mb-3">IPS — Ilmu Pengetahuan Sosial</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Menyelesaikan pendidikan menengah atas dengan jurusan IPS. Aktif dalam ekstrakurikuler.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative flex flex-col md:flex-row items-start fade-in-left">
+                    <div class="md:w-1/2 md:pr-12 md:text-right pl-16 md:pl-0">
+                        <div class="bg-slate-800/50 backdrop-blur border border-slate-700/50 rounded-xl p-6 card-hover">
+                            <span class="inline-block px-3 py-1 bg-slate-700/50 text-slate-300 text-xs font-bold rounded-full mb-3">2018 — 2021</span>
+                            <h3 class="text-lg font-semibold text-white mb-1">MTS Batamiyah</h3>
+                            <p class="text-blue-400 text-sm font-medium mb-3">Sekolah Menengah Pertama</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">Mulai mengenal dunia teknologi dan pemrograman melalui mata pelajaran TIK.</p>
+                        </div>
+                    </div>
+                    <div class="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-8 w-5 h-5 bg-blue-400/60 rounded-full border-4 border-slate-900 z-10"></div>
+                    <div class="md:w-1/2 md:pl-12 hidden md:block"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="relative py-24">
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4 block">Portofolio Proyek</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-tight mb-4">Proyek yang Telah <span class="text-blue-400 italic">Saya Kerjakan</span></h2>
+                <p class="text-slate-400 text-sm max-w-xl mx-auto">Berikut adalah beberapa proyek pilihan yang telah saya kerjakan selama perjalanan pendidikan saya.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 mb-12 fade-in">
+                <button class="filter-btn active px-5 py-2 text-xs font-bold uppercase tracking-wider rounded-full border transition-all" data-filter="all">Semua</button>
+                <button class="filter-btn px-5 py-2 text-xs font-bold uppercase tracking-wider rounded-full border transition-all" data-filter="pbl">PBL</button>
+                <button class="filter-btn px-5 py-2 text-xs font-bold uppercase tracking-wider rounded-full border transition-all" data-filter="web">Web</button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card scale-in card-hover bg-slate-800/30 backdrop-blur border border-slate-700/50 rounded-xl overflow-hidden group" data-category="pbl">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="https://i.pinimg.com/736x/7d/23/5d/7d235d0fa7b5b443decac1fb32b4c006.jpg" alt="PBL Project" class="project-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full">PBL Semester 1</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">Sistem Administrasi Publik Digital</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Proyek PBL semester 1 membangun platform Pencatatan Administrasi Publik untuk membantu mengelola data masyarakat secara digital.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">HTML</span>
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">CSS</span>
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">MySQL</span>
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">Bootstrap</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="inline-flex items-center gap-1.5 text-blue-400 text-xs font-medium hover:text-blue-300 transition-colors">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> Source Code
+                            </a>
+                            <a href="#" class="inline-flex items-center gap-1.5 text-slate-400 text-xs font-medium hover:text-white transition-colors">
+                                <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card scale-in card-hover bg-slate-800/30 backdrop-blur border border-slate-700/50 rounded-xl overflow-hidden group" data-category="web" style="transition-delay:0.1s;">
+                    <div class="relative overflow-hidden aspect-video">
+                        <img src="https://i1-c.pinimg.com/1200x/53/83/e9/5383e9ed498cdc72e1beda8986d6bc26.jpg" alt="Website Sekolah" class="project-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-slate-700 text-slate-200 text-xs font-bold rounded-full">SMA</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">Website Profil Sekolah</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">Website profil MA Batamiyah sebagai Bantuan Informasi Secara Digital.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">HTML</span>
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">CSS</span>
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">JavaScript</span>
+                            <span class="px-2.5 py-1 bg-slate-700/50 text-slate-300 text-xs rounded">PHP</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="inline-flex items-center gap-1.5 text-blue-400 text-xs font-medium hover:text-blue-300 transition-colors">
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="relative py-24 bg-slate-900/50">
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4 block">Keahlian</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-tight mb-4">Skillset yang Saya <span class="text-blue-400 italic">Miliki</span></h2>
+                <p class="text-slate-400 text-sm max-w-xl mx-auto">Kombinasi keterampilan teknis dan non-teknis yang terus saya kembangkan.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- Technical Skills -->
+                <div class="fade-in-left">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                            <i data-lucide="code-2" class="w-5 h-5 text-blue-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Technical Skills</h3>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="mt-4">
+                        <p class="text-sm font-medium text-slate-400 mb-4 uppercase tracking-wider flex items-center justify-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            Programming Languages
+                        </p>
+                        <div class="flex flex-wrap items-center justify-center gap-4">
+                            <div class="group flex items-center gap-3 bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/50 rounded-xl px-4 py-3 transition-all duration-300 hover:scale-105">
+                                <i class="devicon-php-plain colored text-2xl"></i>
+                                <span class="font-medium text-slate-300">PHP</span>
+                            </div>
+                            <div class="group flex items-center gap-3 bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/50 rounded-xl px-4 py-3 transition-all duration-300 hover:scale-105">
+                                <i class="devicon-javascript-plain colored text-2xl"></i>
+                                <span class="font-medium text-slate-300">JavaScript</span>
+                            </div>
+                            <div class="group flex items-center gap-3 bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/50 rounded-xl px-4 py-3 transition-all duration-300 hover:scale-105">
+                                <i class="devicon-html5-plain colored text-2xl"></i>
+                                <span class="font-medium text-slate-300">HTML</span>
+                            </div>
+                            <div class="group flex items-center gap-3 bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/50 rounded-xl px-4 py-3 transition-all duration-300 hover:scale-105">
+                                <i class="devicon-css3-plain colored text-2xl"></i>
+                                <span class="font-medium text-slate-300">CSS</span>
+                            </div>
+                            <div class="group flex items-center gap-3 bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/50 rounded-xl px-4 py-3 transition-all duration-300 hover:scale-105">
+                                <i class="devicon-python-plain colored text-2xl"></i>
+                                <span class="font-medium text-slate-300">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Frameworks -->
+                    <div class="mt-8">
+                        <h4 class="text-sm font-bold text-slate-300 uppercase tracking-wider mb-5 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Tools & Frameworks
+                        </h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <i data-lucide="globe" class="w-4 h-4 text-blue-500"></i> Laravel
+                            </span>
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <i data-lucide="wind" class="w-4 h-4 text-blue-500"></i> Tailwind CSS
+                            </span>
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <i data-lucide="layout" class="w-4 h-4 text-blue-500"></i> Bootstrap
+                            </span>
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <i data-lucide="database" class="w-4 h-4 text-blue-500"></i> MySQL
+                            </span>
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <i data-lucide="git-branch" class="w-4 h-4 text-blue-500"></i> Git
+                            </span>
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg> GitHub
+                            </span>
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <i data-lucide="file-code" class="w-4 h-4 text-blue-500"></i> VS Code
+                            </span>
+                            <span class="px-4 py-2.5 bg-slate-800/80 border border-slate-700/50 rounded-lg text-sm text-slate-300 hover:border-blue-500/50 hover:text-blue-300 transition-all cursor-default flex items-center gap-2">
+                                <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.588-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.02 3.019 3.02h3.117V1.471H8.147zm4.588 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.147 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.02 3.019 3.02h3.117V8.98H8.147zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 00-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148z"/></svg> Figma
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non-Technical Skills -->
+                <div class="fade-in-right">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                            <i data-lucide="brain" class="w-5 h-5 text-blue-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Non-Technical Skills</h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-5 card-hover group">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600/20 transition-colors">
+                                <i data-lucide="message-circle" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="text-sm font-semibold text-white mb-1">Komunikasi</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Menyampaikan ide dengan jelas baik lisan maupun tulisan.</p>
+                        </div>
+                        <div class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-5 card-hover group">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600/20 transition-colors">
+                                <i data-lucide="users" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="text-sm font-semibold text-white mb-1">Kepemimpinan</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Pengalaman memimpin tim dalam proyek dan organisasi.</p>
+                        </div>
+                        <div class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-5 card-hover group">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600/20 transition-colors">
+                                <i data-lucide="clock" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="text-sm font-semibold text-white mb-1">Manajemen Waktu</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Mengatur prioritas dan menyelesaikan tugas tepat waktu.</p>
+                        </div>
+                        <div class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-5 card-hover group">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600/20 transition-colors">
+                                <i data-lucide="lightbulb" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="text-sm font-semibold text-white mb-1">Problem Solving</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Menganalisis masalah dan menemukan solusi secara logis.</p>
+                        </div>
+                        <div class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-5 card-hover group">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600/20 transition-colors">
+                                <i data-lucide="handshake" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="text-sm font-semibold text-white mb-1">Kerja Tim</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Kolaboratif dan adaptif dengan berbagai tipe orang.</p>
+                        </div>
+                        <div class="bg-slate-800/30 border border-slate-700/50 rounded-xl p-5 card-hover group">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600/20 transition-colors">
+                                <i data-lucide="book-open" class="w-6 h-6 text-blue-400"></i>
+                            </div>
+                            <h4 class="text-sm font-semibold text-white mb-1">Fast Learner</h4>
+                            <p class="text-xs text-slate-400 leading-relaxed">Cepat mempelajari teknologi dan konsep baru secara mandiri.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-slate-300 uppercase tracking-wider mb-5 flex items-center gap-2">
+                            <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span> Bahasa
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between bg-slate-800/30 border border-slate-700/50 rounded-lg px-5 py-3.5">
+                                <span class="text-sm text-slate-300">Bahasa Indonesia</span>
+                                <span class="px-3 py-1 bg-green-600/20 text-green-400 text-xs font-bold rounded-full">Native</span>
+                            </div>
+                            <div class="flex items-center justify-between bg-slate-800/30 border border-slate-700/50 rounded-lg px-5 py-3.5">
+                                <span class="text-sm text-slate-300">Bahasa Inggris</span>
+                                <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-xs font-bold rounded-full">Intermediate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOCIAL MEDIA SECTION ========== -->
+    <section id="social" class="relative py-24">
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-3xl"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-4 block">Media Sosial</span>
+                <h2 class="font-serif text-3xl md:text-4xl tracking-tight mb-4">Temukan Saya <span class="text-blue-400 italic">di Dunia Maya</span></h2>
+                <p class="text-slate-400 text-sm max-w-xl mx-auto">Hubungi dan ikuti perjalanan saya melalui berbagai platform media sosial berikut.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://www.facebook.com/share/1BNceYfQeA/" target="_blank" rel="noopener noreferrer" class="social-icon-card facebook bg-slate-800/30 border border-slate-700/50 rounded-2xl p-7 flex flex-col items-center text-center group">
+                    <div class="s-icon-bg w-16 h-16 bg-slate-700/30 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="s-icon w-8 h-8 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-1 group-hover:text-[#1877F2] transition-colors">Facebook</h3>
+                    <p class="text-xs text-slate-400 mb-4">facebook.com/Muhammad Arifin</p>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 group-hover:text-[#1877F2] transition-colors">Kunjungi Profil <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span>
+                </a>
+                <a href="https://github.com/necromancer4432-jpg" target="_blank" rel="noopener noreferrer" class="social-icon-card github bg-slate-800/30 border border-slate-700/50 rounded-2xl p-7 flex flex-col items-center text-center group">
+                    <div class="s-icon-bg w-16 h-16 bg-slate-700/30 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="s-icon w-8 h-8 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-1 group-hover:text-white transition-colors">GitHub</h3>
+                    <p class="text-xs text-slate-400 mb-4">github.com/necromancer4432-jpg</p>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 group-hover:text-white transition-colors">Kunjungi Profil <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span>
+                </a>
+                <a href="https://open.spotify.com/user/312pysbw5awmz4vfr4ep35dmdaiq?si=floIDG04Qt6-0Emn54qikw" target="_blank" rel="noopener noreferrer" class="social-icon-card spotify bg-slate-800/30 border border-slate-700/50 rounded-2xl p-7 flex flex-col items-center text-center group">
+                    <div class="s-icon-bg w-16 h-16 bg-slate-700/30 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="s-icon w-8 h-8 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-1 group-hover:text-[#1DB954] transition-colors">Spotify</h3>
+                    <p class="text-xs text-slate-400 mb-4">open.spotify.com/user/arifin</p>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 group-hover:text-[#1DB954] transition-colors">Kunjungi Profil <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-card linkedin bg-slate-800/30 border border-slate-700/50 rounded-2xl p-7 flex flex-col items-center text-center group">
+                    <div class="s-icon-bg w-16 h-16 bg-slate-700/30 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="s-icon w-8 h-8 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-1 group-hover:text-[#0A66C2] transition-colors">LinkedIn</h3>
+                    <p class="text-xs text-slate-400 mb-4">linkedin.com/in/muhammad-arifin</p>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 group-hover:text-[#0A66C2] transition-colors">Kunjungi Profil <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon-card instagram bg-slate-800/30 border border-slate-700/50 rounded-2xl p-7 flex flex-col items-center text-center group">
+                    <div class="s-icon-bg w-16 h-16 bg-slate-700/30 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="s-icon w-8 h-8 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-1 group-hover:text-[#E4405F] transition-colors">Instagram</h3>
+                    <p class="text-xs text-slate-400 mb-4">@muhammadarifin</p>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 group-hover:text-[#E4405F] transition-colors">Kunjungi Profil <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span>
+                </a>
+                <a href="mailto:necromancer4432@gmail.com" class="social-icon-card email bg-slate-800/30 border border-slate-700/50 rounded-2xl p-7 flex flex-col items-center text-center group">
+                    <div class="s-icon-bg w-16 h-16 bg-slate-700/30 rounded-2xl flex items-center justify-center mb-5">
+                        <i data-lucide="mail" class="s-icon w-8 h-8 text-slate-400"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-1 group-hover:text-[#3B82F6] transition-colors">Email</h3>
+                    <p class="text-xs text-slate-400 mb-4">necromancer4432@gmail.com</p>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 group-hover:text-[#3B82F6] transition-colors">Kirim Email <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="relative py-16 bg-slate-900/80">
+        <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">A</div>
+                        <span class="text-white font-semibold text-lg">Muhammad <span class="text-blue-400">Arifin</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Mahasiswa Teknik Informatika yang bersemangat membangun solusi digital. Terbuka untuk peluang kolaborasi dan proyek menarik.</p>
+                    <div class="flex items-center gap-3">
+                        <a href="https://www.facebook.com/share/1BNceYfQeA/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-[#1877F2] hover:border-[#1877F2]/50 transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://github.com/necromancer4432-jpg" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:border-white/30 transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
+                        <a href="https://open.spotify.com/user/312pysbw5awmz4vfr4ep35dmdaiq?si=floIDG04Qt6-0Emn54qikw" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-[#1DB954] hover:border-[#1DB954]/50 transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-[#0A66C2] hover:border-[#0A66C2]/50 transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="w-9 h-9 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-[#E4405F] hover:border-[#E4405F]/50 transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-5">Navigasi</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-sm text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Tentang Saya</a></li>
+                        <li><a href="#education" class="text-sm text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Pendidikan</a></li>
+                        <li><a href="#projects" class="text-sm text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Proyek</a></li>
+                        <li><a href="#skills" class="text-sm text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Keahlian</a></li>
+                        <li><a href="#social" class="text-sm text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-3 h-3"></i> Media Sosial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-5">Info Singkat</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0"></i><span class="text-sm text-slate-400">Batam, Indonesia</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="mail" class="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0"></i><span class="text-sm text-slate-400">necromancer4432@gmail.com</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0"></i><span class="text-sm text-slate-400">D IV Teknik Informatika — Politeknik Negeri Batam</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-xs text-slate-500">&copy; 2025 Muhammad Arifin. Dibuat dengan <span class="text-red-400">&hearts;</span> menggunakan HTML, Tailwind CSS & JavaScript.</p>
+                <a href="#hero" class="text-xs text-slate-500 hover:text-blue-400 transition-colors flex items-center gap-1">Kembali ke atas <i data-lucide="arrow-up" class="w-3 h-3"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
