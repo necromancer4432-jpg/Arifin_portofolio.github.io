@@ -12,7 +12,7 @@ Saya senang membangun website modern, mempelajari teknologi baru, dan mengembang
 
 ## 🔗 Media Sosial
 - GitHub: https://github.com/necromancer4432-jpg  
-- Portfolio: https://arifin-portofolio.github.io  
+- Portfolio: https://arifin_portofolio.github.io  
 
 ---
 
